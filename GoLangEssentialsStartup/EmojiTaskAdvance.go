@@ -15,17 +15,14 @@ func main(){
 	fmt.Println("Printing three random emoji")
 	 
 	allCode:=textCodes()
+	var index int
 
-	index:=randomNumber(len(allCode)-1)
-	emoji.Println(allCode[index])
-	allCode=removeItem(allCode, index)
 
-	index=randomNumber(len(allCode)-1)
-	emoji.Println(allCode[index])
-	allCode=removeItem(allCode, index)
-
-	index=randomNumber(len(allCode)-1)
-	emoji.Println(allCode[index])
+	for i := 0; i < 3; i++ {
+		index=randomNumber(len(allCode))
+		emoji.Println(allCode[index])
+		allCode=removeItem(allCode, index)
+	}
 
 }
 

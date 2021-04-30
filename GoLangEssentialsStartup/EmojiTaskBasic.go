@@ -13,9 +13,9 @@ func main(){
 	fmt.Println("Printing three random emoji")	 
 	allCode:=textCodes()
 
-	emoji.Println(allCode[0])
-	emoji.Println(allCode[1])
-	emoji.Println(allCode[2])
+	for i := 0; i < 3; i++ {
+		emoji.Println(allCode[i])
+	}
 
 }
 
