@@ -16,6 +16,10 @@ func (l *List) Delete(i int) bool{
 	return false
 }
 
+func (l *List) Size() int {	
+	return len(*l)
+}
+
 func (l *List) Contains(a interface{}) bool{
 	for _, v := range *l {
 		if v == a {

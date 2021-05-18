@@ -3,33 +3,64 @@ package main
 import (
 	"fmt"	
 	"github.com/partha-sen/ostd/collection/set"
-	"github.com/partha-sen/ostd/collection/list"
 )
 
 
 func main(){
-
-	set:=set.SortedSet{}
-
-	set.Add(Student{Name:"Ram", Class:1, Roll:1})
-	set.Add(Student{Name:"Sham", Class:1, Roll:2})
-	set.Add(Student{Name:"Jadu", Class:1, Roll:3})
+    /*
+	studentSet:=set.SortedSet{}
 	
-	fmt.Println(set)
+	studentSet.Add(Student{Name:"Name2", Class:1, Roll:2})	
+	studentSet.Add(Student{Name:"Name5", Class:1, Roll:5})
+	studentSet.Add(Student{Name:"Name6", Class:1, Roll:6})	
+	studentSet.Add(Student{Name:"Name8", Class:1, Roll:8})
+	studentSet.Add(Student{Name:"Name9", Class:1, Roll:9})
 
-	set.Remove(Student{Name:"aaaa", Class:1, Roll:3})
+	s10:=Student{Name:"Name10", Class:1, Roll:10}
+	studentSet.Add(s10)
+  
+	studentSet.Add(Student{Name:"Name3", Class:1, Roll:3})
+	studentSet.Add(Student{Name:"Name4", Class:1, Roll:4})
+	studentSet.Add(Student{Name:"Name7", Class:1, Roll:7})
 
-	fmt.Println(set)
+	s12:=Student{Name:"Name12", Class:1, Roll:12}
+	studentSet.Add(s12)
 
-	list:=list.List{}
-	list.Add(Student{Name:"Ram", Class:1, Roll:1})
-	list.Add(Student{Name:"Sham", Class:1, Roll:1})
-	list.Add(Student{Name:"Ram", Class:1, Roll:1})
+	s11:=Student{Name:"Name11", Class:1, Roll:11}
+	studentSet.Add(s11)
 
-	fmt.Println(list)
+	s1:=Student{Name:"Name1", Class:1, Roll:1}
+	studentSet.Add(s1)
+	
+	fmt.Println(studentSet)*/
 
-	list.Delete(1)
-    
-	fmt.Println(list)
+
+	 set:=set.Set{}
+	 set.Add("AA")
+	 set.Add("B")
+	 set.Add("AA")
+	 set.Add("C")
+
+	 fmt.Println(set.Contains("C"))
+
+	 all:=set.ToSlice()
+
+	 for _, v := range all {
+		 fmt.Println(v)
+	 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
