@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"	
-	"github.com/partha-sen/ostd/collection/set"
+	//"github.com/partha-sen/ostd/collection/stack"
+	"github.com/partha-sen/ostd/collection/queue"
 )
 
 
@@ -32,7 +33,7 @@ func main(){
 	s1:=Student{Name:"Name1", Class:1, Roll:1}
 	studentSet.Add(s1)
 	
-	fmt.Println(studentSet)*/
+	fmt.Println(studentSet)
 
 
 	 set:=set.Set{}
@@ -47,7 +48,25 @@ func main(){
 
 	 for _, v := range all {
 		 fmt.Println(v)
+	 }*/
+
+	 queue:=queue.Queue{}
+
+	 queue.Add(Student{Name:"Name1", Class:1, Roll:1})
+	 queue.Add(Student{Name:"Name2", Class:1, Roll:2}) 
+	 queue.Add(Student{Name:"Name3", Class:1, Roll:3}) 
+	 queue.Add(Student{Name:"Name4", Class:1, Roll:4}) 
+	 
+
+
+	 for queue.Size()>0 {		  
+		if obj, err:=queue.Remove(); err == nil {
+			fmt.Println(obj.(Student).Name)
+		  }
 	 }
+
+
+
 
 
 
