@@ -19,6 +19,6 @@ func reverseArray(a []int32) []int32 {
 
 func main(){	
 	r:=[]int32{1,2,3,4}
-	fmt.Printf("Revers Array is %v ", reverseArray(r))
+	fmt.Printf("Revers array is %v ", reverseArray(r))
 }
 

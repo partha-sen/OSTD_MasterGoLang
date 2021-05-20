@@ -3,11 +3,37 @@ package main
 import (
 	"fmt"	
 	//"github.com/partha-sen/ostd/collection/stack"
-	"github.com/partha-sen/ostd/collection/queue"
+	"github.com/partha-sen/ostd/collection/set"
 )
+
+type comparableString string
+
+  func (str1 comparableString) CompareTo(str2 interface{}) int {
+	  var rtn int
+
+	    if str1 > str2.(comparableString) {
+			rtn = 1
+		}
+
+		if str1 < str2.(comparableString) {
+			rtn = -1
+		}
+
+		return rtn
+  }
+
 
 
 func main(){
+
+	stringSet:=set.SortedSet{}
+
+	stringSet.Add(comparableString("AA"))
+	stringSet.Add(comparableString("CC"))
+	stringSet.Add(comparableString("BB"))
+
+	fmt.Println(stringSet)
+
     /*
 	studentSet:=set.SortedSet{}
 	
@@ -48,7 +74,7 @@ func main(){
 
 	 for _, v := range all {
 		 fmt.Println(v)
-	 }*/
+	 }
 
 	 queue:=queue.Queue{}
 
@@ -63,7 +89,7 @@ func main(){
 		if obj, err:=queue.Remove(); err == nil {
 			fmt.Println(obj.(Student).Name)
 		  }
-	 }
+	 }*/
 
 
 
