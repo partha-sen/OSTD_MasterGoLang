@@ -1,14 +1,16 @@
 package stack
 
 import(
+	"fmt"	
 	"errors"
 )
 
 type any interface{}
 type anySlice [] any
+const initCapacity=16
 
 func New() Stack {
-	a:=make(anySlice, 0, 16)
+	a:=make(anySlice, 0, initCapacity)
 	return &a
 }
 
@@ -29,7 +31,14 @@ func (s *anySlice) Pop() (any, error) {
 		err error
 	) 
 
-	length:=len(*s)
+	length, capacity :=len(*s), cap(*s) 
+	
+	fmt.Println("len",len(*s),"cap",cap(*s))
+
+	if( capacity>initCapacity && length <= capacity/2 ){
+		//down size
+		*s=append(anySlice{}, (*s)[:length]...)
+	}
 
 	if length > 0 {
 		rtn = (*s)[length-1]

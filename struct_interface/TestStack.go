@@ -15,11 +15,14 @@ type parents struct{
 
 func main(){	
 	
+	
 	stack:=stack.New()
+	
 	stack.Push("Partha")
 	stack.Push(1)
 	stack.Push(parents{father:"Karamchand", mother:"Putlibai"})
 	stack.Push(1.1)
+	
 
 	for x, err:=stack.Pop(); err == nil; x, err=stack.Pop() {
 		switch v := x.(type) {
