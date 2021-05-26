@@ -23,11 +23,7 @@ func calculateExtCount(dir string, chanMapCount chan map[string]int, wg *sync.Wa
             go calculateExtCount(dir+"/"+file.Name(), chanMapCount, wg)            
 		}else{
 			ext:=ext(file.Name())
-			if oldVal, OK:=extMap[ext]; OK {
-			   extMap[ext]=oldVal+1
-			}else{
-				extMap[ext]=1
-			}			
+			extMap[ext] += 1					
 		}		
 	}
 	chanMapCount<-extMap
