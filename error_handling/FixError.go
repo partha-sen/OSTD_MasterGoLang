@@ -51,6 +51,11 @@ func parseFloat(arg string) (float64, error) {
 	return feet, err
 }
 
+func convertToMeters(feet float64) {
+	meters := feet * 0.3048
+	fmt.Printf("%g feet is %g meters.\n", feet, meters)
+}
+
 
 func main() {
 	if len(os.Args) < 2 {
@@ -58,19 +63,14 @@ func main() {
 		return
 	}
 
-	arg := os.Args[1]
-
-	
+	arg := os.Args[1]	
 
 	feet, err := parseFloat(arg)
 
 	if err != nil {
        log.Println(err)
-		return 
+	   return 
 	}
-
-
-	meters := feet * 0.3048
-
-	fmt.Printf("%g feet is %g meters.\n", feet, meters)
+	
+    convertToMeters(feet)	
 }
