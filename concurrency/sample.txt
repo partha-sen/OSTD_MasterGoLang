@@ -1,0 +1,504 @@
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
+We have learnt that structs can contain data.
+structs can also contain behavior in the form of methods. 
+The definition of a method attached to or associated with a struct 
+or any other type for that matter, is quite similar to a 
+normal func definition, the only difference being that you need to 
+additionally specify the type.
+Many object oriented languages have a concept of this or self that implicitly
+refers to the current instance. Go has no such keyword. 
+When defining a function or method associated with a type, 
+it is given as a named variable - in this case 
+and then within the function the variable r is used.
+In the above call to Area, the instance of Rectangle 
+is passed as a value. You could also pass it by reference. 
+In calling the function, there would be no difference whether 
+the instance that you call it with is a pointer or a value 
+because Go will automatically do the conversion for you.
+GO Language is a statically compiled programming language, 
+It is an open-source language. It was designed at Google by 
+Rob Pike, Ken Thompson, and Robert Grieserner. It is also known as 
+Golang. Go language is a general-purpose programming language mainly 
+meant for building large scale complex software.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, the way waste is dumped 
+on the land eventually ends up in the soil and turns toxic. If land pollution 
+keeps on happening at this rate, we won’t have fertile soil to grow our crops on. 
+Therefore, serious measures must be taken to reduce pollution to the core.
+Pollution affects the quality of life more than one can imagine. 
+It works in mysterious ways, sometimes which cannot be seen by the naked eye. However, 
+it is very much present in the environment. For instance, you might not be able to see 
+the natural gases present in the air, but they are still there. 
+Similarly, the pollutants which are messing up the air and 
+increasing the levels of carbon dioxide is very dangerous for humans. 
+Increased level of carbon dioxide will lead to global warming.
+Further, the water is polluted in the name of industrial development, 
+religious practices and more will cause a shortage of drinking water. 
+Without water, human life is not possible. Moreover, 
+the way waste is dumped on the land eventually ends up 
+in the soil and turns toxic. If land pollution keeps on 
+happening at this rate, we won’t have fertile soil to 
+grow our crops on. Therefore, serious measures must be 
+taken to reduce pollution to the core.
