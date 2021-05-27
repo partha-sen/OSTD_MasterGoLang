@@ -13,6 +13,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"github.com/pkg/errors"
+	"log"
 )
 
 // ---------------------------------------------------------
@@ -37,6 +39,19 @@ This program converts feet into meters.
 Usage:
 feet [feetsToConvert]`
 
+func parseFloat(arg string) (float64, error) {
+
+	feet, err := strconv.ParseFloat(arg, 64)
+
+	if err != nil {
+		msg:=fmt.Sprintf("error: '%v' is not a number.", arg)
+        return 0, errors.Wrap(err, msg)
+	}
+
+	return feet, err
+}
+
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println(strings.TrimSpace(usage))
@@ -47,11 +62,10 @@ func main() {
 
 	
 
-	feet, err := strconv.ParseFloat(arg, 64)
+	feet, err := parseFloat(arg)
 
 	if err != nil {
-        fmt.Printf("error: '%v' is not a number.", arg)
-
+       log.Println(err)
 		return 
 	}
 
