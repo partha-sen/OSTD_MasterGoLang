@@ -5,6 +5,7 @@ import(
 	"io/ioutil"
 	"sync"
 	"time"
+	"path/filepath"
 )
 
 
@@ -22,7 +23,7 @@ func calculateExtCount(dir string, chanMapCount chan map[string]int, wg *sync.Wa
 			wg.Add(1)
             go calculateExtCount(dir+"/"+file.Name(), chanMapCount, wg)            
 		}else{
-			ext:=ext(file.Name())
+			ext:=filepath.Ext(file.Name())
 			extMap[ext] += 1					
 		}		
 	}
