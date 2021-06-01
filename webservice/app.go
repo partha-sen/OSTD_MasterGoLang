@@ -17,6 +17,9 @@ func main() {
 	http.HandleFunc("/interviews", controller.HandleInterviews)
 	http.HandleFunc("/interviews/", controller.HandleInterview)
 
+	http.HandleFunc("/questions", controller.HandleQuestions)
+	http.HandleFunc("/questions/", controller.HandleQuestion)
+
 	if err := http.ListenAndServe(":1000", nil); err != http.ErrServerClosed {
 		log.Fatalf("ListenAndServe(): %v", err)
 	}

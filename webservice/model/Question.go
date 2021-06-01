@@ -1,8 +1,8 @@
 package model
 
-type question struct {
-	id           string
-	interview_id string
-	tags         []string
-	text         string
+type Question struct {
+	Id           int
+	Interview_id int
+	Tags         []string
+	Text         string
 }
