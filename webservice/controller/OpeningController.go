@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/partha-sen/ostd/webservice/model"
 	"github.com/partha-sen/ostd/webservice/service"
 )
 
@@ -17,7 +18,22 @@ func HandleOpening(w http.ResponseWriter, r *http.Request) {
 		processGet(w, strId, service.GetOpeningById)
 
 	case http.MethodPut:
-		processPut(w, r, strId, service.UpdateOpening)
+		id, err := parsePathParam(strId)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusBadRequest)
+			return
+		}
+		var obj model.Opening
+		err = requestBodyToObject(w, r, &obj)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusBadRequest)
+			return
+		}
+		obj.Id = id
+		callUpdate := func(obj model.Any) (int64, error) {
+			return service.UpdateOpening(obj.(model.Opening))
+		}
+		processPut(w, obj, callUpdate)
 
 	case http.MethodDelete:
 		processDelete(w, strId, service.DeleteOpening)
@@ -36,7 +52,15 @@ func HandleOpenings(w http.ResponseWriter, r *http.Request) {
 		processGetAll(w, service.GetAllOpening)
 
 	case http.MethodPost:
-		processPost(w, r, service.SaveOpening)
+		var obj model.Opening
+		err := requestBodyToObject(w, r, &obj)
+
+		if err == nil {
+			callSave := func(obj model.Any) (int64, error) {
+				return service.SaveOpening(obj.(model.Opening))
+			}
+			processPost(w, obj, callSave)
+		}
 
 	default:
 		w.WriteHeader(http.StatusMethodNotAllowed)

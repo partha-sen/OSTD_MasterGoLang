@@ -2,13 +2,12 @@ package controller
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"strconv"
 
 	"github.com/partha-sen/ostd/webservice/model"
-	"github.com/partha-sen/ostd/webservice/service"
+	"github.com/pkg/errors"
 )
 
 func writeJson(w http.ResponseWriter, obj interface{}) {
@@ -22,26 +21,17 @@ func writeJson(w http.ResponseWriter, obj interface{}) {
 	w.Write(data)
 }
 
-func validatePathParam(w http.ResponseWriter, strId string) (int, bool) {
-	if len(strId) == 0 {
-		w.WriteHeader(http.StatusBadRequest)
-		return 0, false
-	}
-
+func parsePathParam(strId string) (int, error) {
 	id, err := strconv.Atoi(strId)
-
-	if err != nil {
-		log.Println(err)
-		w.WriteHeader(http.StatusBadRequest)
-		return 0, false
-	}
-	return id, true
+	pathErr := errors.Wrap(err, "Could not get from path param")
+	return id, pathErr
 }
 
 func processGet(w http.ResponseWriter, strId string, m func(id int) (model.Any, error)) {
 
-	id, ok := validatePathParam(w, strId)
-	if !ok {
+	id, err := parsePathParam(strId)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
 
@@ -57,22 +47,9 @@ func processGet(w http.ResponseWriter, strId string, m func(id int) (model.Any, 
 
 }
 
-func processPut(w http.ResponseWriter, r *http.Request, strId string, m func([]byte, int) (int64, error)) {
+func processPut(w http.ResponseWriter, obj model.Any, m func(model.Any) (int64, error)) {
 
-	pathId, ok := validatePathParam(w, strId)
-	if !ok {
-		return
-	}
-
-	bodyBytes, err := ioutil.ReadAll(r.Body)
-
-	if err != nil {
-		log.Println(err)
-		w.WriteHeader(http.StatusInternalServerError)
-		return
-	}
-
-	id, err := m(bodyBytes, pathId)
+	id, err := m(obj)
 
 	if err != nil {
 		log.Println(err)
@@ -97,17 +74,9 @@ func processGetAll(w http.ResponseWriter, m func() ([]model.Any, error)) {
 	}
 }
 
-func processPost(w http.ResponseWriter, r *http.Request, m func([]byte) (int64, error)) {
+func processPost(w http.ResponseWriter, obj model.Any, m func(model.Any) (int64, error)) {
 
-	bodyBytes, err := ioutil.ReadAll(r.Body)
-
-	if err != nil {
-		log.Println(err)
-		w.WriteHeader(http.StatusInternalServerError)
-		return
-	}
-
-	id, err := m(bodyBytes)
+	id, err := m(obj)
 
 	if err != nil {
 		log.Println(err)
@@ -119,11 +88,14 @@ func processPost(w http.ResponseWriter, r *http.Request, m func([]byte) (int64, 
 }
 
 func processDelete(w http.ResponseWriter, strId string, m func(id int) (int64, error)) {
-	id, ok := validatePathParam(w, strId)
-	if !ok {
+
+	id, err := parsePathParam(strId)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
-	count, err := service.DeleteOpening(id)
+
+	count, err := m(id)
 	if err != nil {
 		log.Println(err)
 		w.WriteHeader(http.StatusInternalServerError)
@@ -132,4 +104,13 @@ func processDelete(w http.ResponseWriter, strId string, m func(id int) (int64, e
 	b := []byte(strconv.FormatInt(count, 10))
 	w.Write(b)
 
+}
+
+func requestBodyToObject(w http.ResponseWriter, r *http.Request, p model.Any) error {
+
+	err := json.NewDecoder(r.Body).Decode(&p)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+	}
+	return err
 }

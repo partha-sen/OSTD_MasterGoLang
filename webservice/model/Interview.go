@@ -2,9 +2,9 @@ package model
 
 import "time"
 
-type interview struct {
-	id         string
-	opening_id string
-	date       time.Time
-	person     string
+type Interview struct {
+	Id         int
+	Opening_id int
+	Date       time.Time
+	Person     string
 }

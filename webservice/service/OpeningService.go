@@ -1,7 +1,6 @@
 package service
 
 import (
-	"encoding/json"
 	"fmt"
 
 	"github.com/partha-sen/ostd/webservice/dao"
@@ -29,18 +28,7 @@ func GetAllOpening() ([]model.Any, error) {
 
 }
 
-func jsonUnmarshel(by []byte) (model.Opening, error) {
-	var o model.Opening
-	err := json.Unmarshal(by, &o)
-	return o, err
-}
-
-func SaveOpening(by []byte) (int64, error) {
-	obj, err := jsonUnmarshel(by)
-
-	if err != nil {
-		return 0, err
-	}
+func SaveOpening(obj model.Opening) (int64, error) {
 
 	id, err := dao.InsertOpening(obj)
 
@@ -50,14 +38,8 @@ func SaveOpening(by []byte) (int64, error) {
 	return id, nil
 }
 
-func UpdateOpening(by []byte, pathId int) (int64, error) {
+func UpdateOpening(obj model.Opening) (int64, error) {
 
-	obj, err := jsonUnmarshel(by)
-
-	if err != nil {
-		return 0, err
-	}
-	obj.Id = pathId
 	id, err := dao.UpdateOpening(obj)
 
 	if err != nil {
