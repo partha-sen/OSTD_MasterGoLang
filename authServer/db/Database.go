@@ -17,7 +17,6 @@ func SetupDatabase() {
 		os.Getenv("DB_USER"),
 		os.Getenv("DB_PWD"),
 		os.Getenv("DB_USER"))
-	log.Println("connectionString ", connectionString)
 	dbConn, err = sql.Open("mysql", connectionString)
 	if err != nil {
 		log.Fatal(err)
