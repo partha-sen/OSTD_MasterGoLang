@@ -4,11 +4,13 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/joho/godotenv"
 	"github.com/partha-sen/ostd/webservice/controller"
 	"github.com/partha-sen/ostd/webservice/db"
 )
 
 func main() {
+	godotenv.Load()
 	db.SetupDatabase()
 
 	http.HandleFunc("/openings", controller.HandleOpenings)
